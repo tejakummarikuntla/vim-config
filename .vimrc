@@ -339,7 +339,7 @@ function! HasPaste()
     return ''
 endfunction
 
-" Don't close window, when deleting a buffer
+" Don't close window, when deleting a buffer or closing 
 command! Bclose call <SID>BufcloseCloseIt()
 function! <SID>BufcloseCloseIt()
     let l:currentBufNum = bufnr("%")
